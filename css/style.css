@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand img {
+    width: 20%
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
