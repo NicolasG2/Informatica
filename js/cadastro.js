@@ -71,9 +71,9 @@ window.addEventListener("load", () => {
         } else {
             let materiaSelecionadaJSON = sessionStorage.getItem("materiaSelecionada");
             let materiaSelecionada = JSON.parse(materiaSelecionadaJSON);
+         
 
-            if (materiaSelecionada !== null && typeof materiaSelecionada === "object") {
-                console.log("entrou");
+            if (materiaSelecionada !== null && typeof materiaSelecionada === "object") {             
                 const cadastro = {
                     nome: nome.value,
                     matricula: matricula.value,
@@ -81,8 +81,7 @@ window.addEventListener("load", () => {
                     telefone: telefone.value,
                     endereco: endereco.value,
                     data: data.value,
-                    id: materiaSelecionada.idMateria,
-                    materia: materiaSelecionada.nome,
+                    materia: materiaSelecionada
                 };
 
                 const cadastroJSON = JSON.stringify(cadastro);

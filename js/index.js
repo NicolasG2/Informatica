@@ -108,6 +108,7 @@ window.onload = () => {
     criacaoMaterias();
 
     let cards = document.querySelectorAll(".card");
+    let listaMaterias = []; 
 
     cards.forEach((card) => {
         console.log(card);
@@ -121,8 +122,10 @@ window.onload = () => {
                 idMateria: idMateria,
                 nome: nomeMateria,
             };
-        
-            sessionStorage.setItem("materiaSelecionada", JSON.stringify(materiaSelecionada));
+
+           
+            listaMaterias.push(materiaSelecionada);             
+            sessionStorage.setItem("materiaSelecionada", JSON.stringify(listaMaterias));
         
             console.log(materiaSelecionada.idMateria, materiaSelecionada.nome);
         });
