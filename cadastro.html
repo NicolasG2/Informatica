@@ -4,35 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
 
     <title>Cadastro de Aluno</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg w-100">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="./img/if.png" alt="Logo IFPR Campus Paranaguá"
+                        style="width: 100px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Matérias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link active" aria-current="page" href="#">Cadastro</a>
                         </li>
                     </ul>
                 </div>
@@ -40,9 +36,40 @@
         </nav>
     </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <main>
+        <h1>Login</h1>
+
+        <form action="" method="post">
+            <div class="form-item">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome" value="Fulano da Silva" />
+            </div>
+            <div class="form-item">
+                <label for="matricula">Matrícula: </label>
+                <input type="text" name="matricula" id="matricula" placeholder="Informe sua matrícula" value="20213001000" />
+            </div>
+            <div class="form-item">
+                <label for="senha">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Informe seu e-mail" value="fulano@gmail.com" />
+            </div>
+            <div class="form-item">
+                <label for="senha">Telefone: </label>
+                <input type="number" name="telefone" id="telefone" placeholder="Informe seu telefone" value="41987654321" />
+            </div>
+            <div class="form-item">
+                <label for="senha">Endereço: </label>
+                <input type="text" name="endereco" id="endereco" placeholder="Informe seu endereço" value="Rua das Perobas 415" />
+            </div>
+            <div class="form-item">
+                <label for="senha">Data de nascimento: </label>
+                <input type="date" name="data" id="data" value="2000-01-01" />
+            </div>
+            <div class="form-botao-item">
+                <input type="submit" value="Enviar" id="form-botao" />
+            </div>
+        </form>
+    </main>
+
     <script src="./js/cadastro.js"></script>
 </body>
 
